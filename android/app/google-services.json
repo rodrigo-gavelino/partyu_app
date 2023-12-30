@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246867503075",
+    "project_id": "app-partyu",
+    "storage_bucket": "app-partyu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246867503075:android:636584cc18b03c8f61a2d6",
+        "android_client_info": {
+          "package_name": "br.com.appelino.partyu.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt93beLz69Y0hs0uggHdIbuQpd_E7FXb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
