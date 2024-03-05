@@ -1,6 +1,7 @@
 import 'package:Partyu/core/routes/partyu_routes.dart';
-import 'package:Partyu/feaures/splash/splash_core/routes/splash_named_routes.dart';
 import 'package:flutter/material.dart';
+
+import 'feaures/splash/core_splash/routes/splash_named_routes.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -16,9 +17,13 @@ class _AppState extends State<App> {
       debugShowCheckedModeBanner: false,
       title: 'PartyU',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.grey.shade200,
+          elevation: 0,
+        ),
       ),
-     initialRoute: SplashNamedRoutes.splash,
+      initialRoute: SplashNamedRoutes.splash,
       routes: PartyuRoutes.getPartyuRoutes(),
     );
   }

@@ -1,5 +1,3 @@
-
-
 import 'package:Partyu/core/errors/failures/value_failures/password_failure.dart';
 import 'package:Partyu/core/shared/domain/value_objects/password.dart';
 import 'package:Partyu/core/utils/either.dart';
@@ -13,8 +11,9 @@ void main() {
 
       expect(result.value, isA<Right>());
       result.value.fold(
-            (failure) => fail('Expected a Right, but got a Left'),
-            (validPasswordValue) => expect(validPasswordValue, equals(validPassword)),
+        (failure) => fail('Expected a Right, but got a Left'),
+        (validPasswordValue) =>
+            expect(validPasswordValue, equals(validPassword)),
       );
     });
 
@@ -24,11 +23,11 @@ void main() {
 
       expect(result.value, isA<Left>());
       result.value.fold(
-            (failure) {
-          expect(failure, isA<PasswordFailure>());
+        (failure) {
+          expect(failure, isA<PasswordFailures>());
           expect(failure.failedValue, equals(invalidPassword));
         },
-            (r) => fail('Expected a Left, but got a Right'),
+        (r) => fail('Expected a Left, but got a Right'),
       );
     });
   });

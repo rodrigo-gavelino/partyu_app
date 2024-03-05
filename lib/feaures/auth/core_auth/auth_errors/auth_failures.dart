@@ -13,3 +13,10 @@ class SignUpWithEmailAndPasswordFailure extends AuthFailures {
     required super.code,
   });
 }
+
+class SignInWithEmailAndPasswordFailure extends AuthFailures {
+  SignInWithEmailAndPasswordFailure({
+    required super.message,
+    required super.code,
+  });
+}

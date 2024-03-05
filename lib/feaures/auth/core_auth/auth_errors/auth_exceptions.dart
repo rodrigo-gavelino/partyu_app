@@ -15,3 +15,11 @@ class SignUpWithEmailAndPasswordException extends AuthExceptions {
     super.stackTrace,
   });
 }
+
+class SignInWithEmailAndPasswordException extends AuthExceptions {
+  SignInWithEmailAndPasswordException({
+    required super.message,
+    required super.code,
+    super.stackTrace,
+  });
+}
