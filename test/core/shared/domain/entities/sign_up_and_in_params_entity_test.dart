@@ -1,7 +1,7 @@
-import 'package:Partyu/core/shared/domain/entities/sign_up_and_in_params_entity.dart';
-import 'package:Partyu/core/shared/domain/value_objects/email.dart';
-import 'package:Partyu/core/shared/domain/value_objects/password.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:partyu/core/shared/domain/entities/sign_up_and_in_params_entity.dart';
+import 'package:partyu/core/shared/domain/value_objects/email.dart';
+import 'package:partyu/core/shared/domain/value_objects/password.dart';
 
 void main() {
   group('SignUpAndInParamsEntity Tests', () {
@@ -34,7 +34,5 @@ void main() {
 
       expect(entity1.hashCode, entity2.hashCode);
     });
-
-
   });
 }

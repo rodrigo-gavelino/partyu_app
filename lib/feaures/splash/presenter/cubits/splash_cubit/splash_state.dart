@@ -22,7 +22,7 @@ class SplashLoadedState extends SplashState {
 class SplashErrorState extends SplashState {
   final String message;
 
-  SplashErrorState(this.message);
+  const SplashErrorState(this.message);
 
   @override
   List<Object> get props => [message];

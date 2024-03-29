@@ -1,32 +1,14 @@
 {
   "project_info": {
-    "project_number": "246867503075",
-    "project_id": "app-partyu",
-    "storage_bucket": "app-partyu.appspot.com"
+    "project_number": "97441280476",
+    "firebase_url": "https://partyu-backend-default-rtdb.firebaseio.com",
+    "project_id": "partyu-backend",
+    "storage_bucket": "partyu-backend.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:246867503075:android:636584cc18b03c8f61a2d6",
-        "android_client_info": {
-          "package_name": "br.com.appelino.partyu.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCt93beLz69Y0hs0uggHdIbuQpd_E7FXb4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:246867503075:android:37b2ae68a014e0a661a2d6",
+        "mobilesdk_app_id": "1:97441280476:android:1d5a197a26b2d995b45f19",
         "android_client_info": {
           "package_name": "br.com.appelino.partyu.app.partyu_app"
         }
@@ -34,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCt93beLz69Y0hs0uggHdIbuQpd_E7FXb4"
+          "current_key": "AIzaSyCloFTeYCHN1IbBibubPHyHqxyXak1Vq44"
         }
       ],
       "services": {

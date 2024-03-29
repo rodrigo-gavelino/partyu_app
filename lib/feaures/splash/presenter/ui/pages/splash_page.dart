@@ -1,9 +1,9 @@
-import 'package:Partyu/core/constants/assets.dart';
-import 'package:Partyu/feaures/auth/core_auth/routes/auth_named_routes.dart';
-import 'package:Partyu/feaures/splash/presenter/cubits/splash_cubit/splash_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:partyu/core/constants/assets.dart';
+import 'package:partyu/feaures/auth/core_auth/routes/auth_named_routes.dart';
+import 'package:partyu/feaures/splash/presenter/cubits/splash_cubit/splash_cubit.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -27,7 +27,7 @@ class _SplashPageState extends State<SplashPage> {
       body: BlocConsumer<SplashCubit, SplashState>(
         listener: (context, state) {
           if (state is SplashLoadedState) {
-            Navigator.pushReplacementNamed(context, AuthNamedRoutes.signUp);
+            Navigator.pushReplacementNamed(context, AuthNamedRoutes.signIn);
           }
         },
         builder: (context, state) {

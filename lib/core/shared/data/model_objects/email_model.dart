@@ -1,5 +1,5 @@
-import 'package:Partyu/core/errors/failures/value_failures/email_failure.dart';
-import 'package:Partyu/core/shared/domain/value_objects/email.dart';
+import 'package:partyu/core/errors/failures/value_failures/email_failure.dart';
+import 'package:partyu/core/shared/domain/value_objects/email.dart';
 
 class EmailModel extends Email {
   EmailModel(super.value);

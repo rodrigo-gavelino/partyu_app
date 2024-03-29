@@ -1,4 +1,4 @@
-import 'package:Partyu/feaures/auth/domain/entities/sign_up_with_email_and_password_response_entity.dart';
+import 'package:partyu/feaures/auth/domain/entities/sign_up_with_email_and_password_response_entity.dart';
 
 class SignUpWithEmailAndPasswordResponseModel
     extends SignUpWithEmailAndPasswordResponseEntity {

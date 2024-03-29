@@ -1,5 +1,5 @@
-import 'package:Partyu/core/shared/domain/value_objects/email.dart';
-import 'package:Partyu/core/shared/domain/value_objects/password.dart';
+import 'package:partyu/core/shared/domain/value_objects/email.dart';
+import 'package:partyu/core/shared/domain/value_objects/password.dart';
 
 class SignUpAndInParamsEntity {
   final Email email;

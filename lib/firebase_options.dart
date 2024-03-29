@@ -53,10 +53,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCt93beLz69Y0hs0uggHdIbuQpd_E7FXb4',
-    appId: '1:246867503075:android:37b2ae68a014e0a661a2d6',
-    messagingSenderId: '246867503075',
-    projectId: 'app-partyu',
-    storageBucket: 'app-partyu.appspot.com',
+    apiKey: 'AIzaSyCloFTeYCHN1IbBibubPHyHqxyXak1Vq44',
+    appId: '1:97441280476:android:1d5a197a26b2d995b45f19',
+    messagingSenderId: '97441280476',
+    projectId: 'partyu-backend',
+    databaseURL: 'https://partyu-backend-default-rtdb.firebaseio.com',
+    storageBucket: 'partyu-backend.appspot.com',
   );
 }

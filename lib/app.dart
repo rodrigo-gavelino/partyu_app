@@ -1,5 +1,5 @@
-import 'package:Partyu/core/routes/partyu_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:partyu/core/routes/partyu_routes.dart';
 
 import 'feaures/splash/core_splash/routes/splash_named_routes.dart';
 

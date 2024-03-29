@@ -1,4 +1,4 @@
-import 'package:Partyu/core/errors/failures/partyu_failures.dart';
+import 'package:partyu/core/errors/failures/partyu_failures.dart';
 
 abstract class AuthFailures extends PartyuFailures {
   AuthFailures({

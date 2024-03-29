@@ -1,5 +1,6 @@
-import 'package:Partyu/core/externals/firebase/auth/abstration/partyu_auth_platform_interface.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
+import 'partyu_auth_platform_interface.dart';
 
 class PartyuAuthMethods extends PartyuAuthPlatform {
   final FirebaseAuth _firebaseAuth;

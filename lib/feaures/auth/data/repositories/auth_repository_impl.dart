@@ -1,16 +1,16 @@
-import 'package:Partyu/core/errors/failures/partyu_failures.dart';
-import 'package:Partyu/core/shared/data/models/sign_up_and_in_params_model.dart';
-import 'package:Partyu/core/shared/domain/entities/sign_up_and_in_params_entity.dart';
-import 'package:Partyu/core/utils/either.dart';
-import 'package:Partyu/feaures/auth/core_auth/auth_errors/auth_exceptions.dart';
-import 'package:Partyu/feaures/auth/core_auth/auth_errors/auth_failures.dart';
-import 'package:Partyu/feaures/auth/data/datasources/sign_in_with_email_and_password/sign_in_with_email_and_password_datasource.dart';
-import 'package:Partyu/feaures/auth/data/datasources/sign_up_with_email_and_password/sign_up_with_email_and_password_datasource.dart';
-import 'package:Partyu/feaures/auth/data/models/sign_in_with_email_and_password_response_model.dart';
-import 'package:Partyu/feaures/auth/data/models/sign_up_with_email_and_password_response_model.dart';
-import 'package:Partyu/feaures/auth/domain/entities/sign_in_with_email_and_password_response_entity.dart';
-import 'package:Partyu/feaures/auth/domain/entities/sign_up_with_email_and_password_response_entity.dart';
-import 'package:Partyu/feaures/auth/domain/repositories/auth_repository.dart';
+import 'package:partyu/core/errors/failures/partyu_failures.dart';
+import 'package:partyu/core/shared/data/models/sign_up_and_in_params_model.dart';
+import 'package:partyu/core/shared/domain/entities/sign_up_and_in_params_entity.dart';
+import 'package:partyu/core/utils/either.dart';
+import 'package:partyu/feaures/auth/core_auth/auth_errors/auth_exceptions.dart';
+import 'package:partyu/feaures/auth/core_auth/auth_errors/auth_failures.dart';
+import 'package:partyu/feaures/auth/data/datasources/sign_in_with_email_and_password/sign_in_with_email_and_password_datasource.dart';
+import 'package:partyu/feaures/auth/data/datasources/sign_up_with_email_and_password/sign_up_with_email_and_password_datasource.dart';
+import 'package:partyu/feaures/auth/data/models/sign_in_with_email_and_password_response_model.dart';
+import 'package:partyu/feaures/auth/data/models/sign_up_with_email_and_password_response_model.dart';
+import 'package:partyu/feaures/auth/domain/entities/sign_in_with_email_and_password_response_entity.dart';
+import 'package:partyu/feaures/auth/domain/entities/sign_up_with_email_and_password_response_entity.dart';
+import 'package:partyu/feaures/auth/domain/repositories/auth_repository.dart';
 
 final class AuthRepositoryImpl implements AuthRepository {
   final SignUpWithEmailAndPasswordDatasource

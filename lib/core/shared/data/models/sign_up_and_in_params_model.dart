@@ -1,6 +1,6 @@
-import 'package:Partyu/core/shared/data/model_objects/email_model.dart';
-import 'package:Partyu/core/shared/data/model_objects/password_model.dart';
-import 'package:Partyu/core/shared/domain/entities/sign_up_and_in_params_entity.dart';
+import 'package:partyu/core/shared/data/model_objects/email_model.dart';
+import 'package:partyu/core/shared/data/model_objects/password_model.dart';
+import 'package:partyu/core/shared/domain/entities/sign_up_and_in_params_entity.dart';
 
 class SignUpAndInParamsModel extends SignUpAndInParamsEntity {
   final EmailModel emailModel;

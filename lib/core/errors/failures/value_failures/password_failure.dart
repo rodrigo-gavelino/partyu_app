@@ -1,11 +1,11 @@
-import 'package:Partyu/core/errors/failures/value_failures/value_failure.dart';
+import 'value_failure.dart';
 
 class PasswordFailures extends ValueFailure<String> {
   PasswordFailures(String value) : super(value);
 
   @override
   String toString() {
-    return 'PasswordFailure(failedValue: $failedValue)';
+    return Error.safeToString('PasswordFailure(failedValue: $failedValue');
   }
 
   static PasswordFailures invalidPassword({required String failedValue}) {

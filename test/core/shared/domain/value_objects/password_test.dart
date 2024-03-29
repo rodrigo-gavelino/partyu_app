@@ -1,7 +1,7 @@
-import 'package:Partyu/core/errors/failures/value_failures/password_failure.dart';
-import 'package:Partyu/core/shared/domain/value_objects/password.dart';
-import 'package:Partyu/core/utils/either.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:partyu/core/errors/failures/value_failures/password_failure.dart';
+import 'package:partyu/core/shared/domain/value_objects/password.dart';
+import 'package:partyu/core/utils/either.dart';
 
 void main() {
   group('Password', () {

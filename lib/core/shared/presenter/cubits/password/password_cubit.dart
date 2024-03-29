@@ -1,7 +1,7 @@
-import 'package:Partyu/core/errors/failures/value_failures/password_failure.dart';
-import 'package:Partyu/core/shared/domain/value_objects/password.dart';
-import 'package:Partyu/core/shared/presenter/cubits/generics/generic_field_state.dart';
 import 'package:bloc/bloc.dart';
+import 'package:partyu/core/errors/failures/value_failures/password_failure.dart';
+import 'package:partyu/core/shared/domain/value_objects/password.dart';
+import 'package:partyu/core/shared/presenter/cubits/generics/generic_field_state.dart';
 
 part 'password_state.dart';
 
@@ -16,31 +16,44 @@ class PasswordCubit extends Cubit<PasswordState> {
       passwordObject.value.fold(
         (failure) {
           if (failure is PasswordLessThanEightCharacters) {
-            emit(PasswordInvalidLengthState(
-                errorMessage: 'Password is too short'));
+            emit(
+              PasswordInvalidLengthState(errorMessage: failure.failedValue),
+            );
           } else if (failure is PasswordNoUpperCase) {
-            emit(PasswordInvalidUpperCaseState(
-                errorMessage:
-                    'Password must contain at least one uppercase letter'));
+            emit(
+              PasswordInvalidUpperCaseState(errorMessage: failure.failedValue),
+            );
           } else if (failure is PasswordNoLowerCase) {
-            emit(PasswordInvalidLowerCaseState(
-                errorMessage:
-                    'Password must contain at least one lowercase letter'));
+            emit(
+              PasswordInvalidLowerCaseState(errorMessage: failure.failedValue),
+            );
           } else if (failure is PasswordNoNumber) {
-            emit(PasswordInvalidNumberState(
-                errorMessage: 'Password must contain at least one number'));
+            emit(
+              PasswordInvalidNumberState(errorMessage: failure.failedValue),
+            );
           } else if (failure is PasswordNoSpecialCharacter) {
-            emit(PasswordInvalidSpecialCharacterState(
-                errorMessage:
-                    'Password must contain at least one special character'));
+            emit(
+              PasswordInvalidSpecialCharacterState(
+                  errorMessage: failure.failedValue),
+            );
           } else {
-            emit(PasswordInvalidState(errorMessage: 'test error message'));
+            emit(
+              PasswordInvalidState(errorMessage: failure.failedValue),
+            );
           }
         },
         (_) => emit(
           PasswordValidState(password: passwordObject),
         ),
       );
+    }
+  }
+
+  void togglePasswordVisibility() {
+    if (state.isVisible!) {
+      emit(state.copyWith(isVisible: false));
+    } else {
+      emit(state.copyWith(isVisible: true));
     }
   }
 }

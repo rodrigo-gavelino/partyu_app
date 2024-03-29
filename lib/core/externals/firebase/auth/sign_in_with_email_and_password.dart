@@ -1,5 +1,5 @@
-import 'package:Partyu/core/externals/firebase/auth/abstration/partyu_auth_platform_interface.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:partyu/core/externals/firebase/auth/abstration/partyu_auth_platform_interface.dart';
 
 abstract interface class SignInWithEmailAndPassword {
   Future<UserCredential> call({

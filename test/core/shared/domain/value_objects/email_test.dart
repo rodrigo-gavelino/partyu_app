@@ -1,8 +1,7 @@
-import 'package:Partyu/core/errors/failures/value_failures/email_failure.dart';
-import 'package:Partyu/core/shared/domain/value_objects/email.dart';
-import 'package:Partyu/core/utils/either.dart';
 import 'package:flutter_test/flutter_test.dart';
-
+import 'package:partyu/core/errors/failures/value_failures/email_failure.dart';
+import 'package:partyu/core/shared/domain/value_objects/email.dart';
+import 'package:partyu/core/utils/either.dart';
 
 void main() {
   group('Email', () {
@@ -12,8 +11,8 @@ void main() {
 
       expect(email.value, isA<Right>());
       email.value.fold(
-            (failure) => fail('Expected a Right, but got a Left'),
-            (validEmailValue) => expect(validEmailValue, equals(validEmail)),
+        (failure) => fail('Expected a Right, but got a Left'),
+        (validEmailValue) => expect(validEmailValue, equals(validEmail)),
       );
     });
 
@@ -23,11 +22,11 @@ void main() {
 
       expect(email.value, isA<Left>());
       email.value.fold(
-            (failure) {
+        (failure) {
           expect(failure, isA<EmailFailure>());
           expect(failure.failedValue, equals(invalidEmail));
         },
-            (r) => fail('Expected a Left, but got a Right'),
+        (r) => fail('Expected a Left, but got a Right'),
       );
     });
   });

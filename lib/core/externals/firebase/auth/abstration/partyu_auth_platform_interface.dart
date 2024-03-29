@@ -1,7 +1,8 @@
-import 'package:Partyu/core/externals/firebase/auth/abstration/partyu_auth_methods.dart';
-import 'package:Partyu/core/inject/partyu_inject.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:partyu/core/inject/partyu_inject.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+
+import 'partyu_auth_methods.dart';
 
 abstract class PartyuAuthPlatform extends PlatformInterface {
   PartyuAuthPlatform() : super(token: _token);

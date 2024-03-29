@@ -1,13 +1,11 @@
-
-import 'package:Partyu/core/errors/failures/value_failures/value_failure.dart';
+import 'value_failure.dart';
 
 class EmailFailure extends ValueFailure<String> {
-
   EmailFailure(super.failedValue);
 
   @override
   String toString() {
-    return Error.safeToString('Invalid Email: $failedValue');
+    return Error.safeToString('Email inválido: $failedValue');
   }
 
   static EmailFailure invalidEmail({required String failedValue}) {
